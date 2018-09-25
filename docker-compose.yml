@@ -1,0 +1,10 @@
+version: "3"
+services:
+  debian-jupyter:
+    image: codebadger/debian-jupyter
+    container_name: debian-jupyter
+    build: .
+    ports:
+      - "8888:8888"
+    stdin_open: true
+    tty: true
